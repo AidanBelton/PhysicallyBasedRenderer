@@ -1,0 +1,7 @@
+#version 400
+layout (Location = 0) out vec4 Buffer1;
+
+void main()
+{
+	Buffer1 = vec4(1,0,1,1);
+}

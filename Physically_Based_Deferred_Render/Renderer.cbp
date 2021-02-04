@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="Renderer" />
+		<Option pch_mode="2" />
+		<Option compiler="cygwin_gcc_compiler" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/Renderer" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="cygwin_gcc_compiler" />
+				<Compiler>
+					<Add option="-g" />
+					<Add directory="include" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/Renderer" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="cygwin_gcc_compiler" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add directory="include" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-std=c++11" />
+			<Add option="-Wall" />
+			<Add option="-DGLEW_STATIC" />
+			<Add directory="C:/cygwin64/usr/i686-pc-mingw32/sys-root/mingw/bin" />
+			<Add directory="C:/SDL2/include" />
+		</Compiler>
+		<Linker>
+			<Add option="-lmingw32" />
+			<Add option="-lSDL2main" />
+			<Add option="-lSDL2" />
+			<Add library="C:\cygwin64\usr\i686-pc-mingw32\sys-root\mingw\lib\libopengl32.a" />
+			<Add library="C:\cygwin64\usr\i686-pc-mingw32\sys-root\mingw\lib\glew32.lib" />
+			<Add directory="C:/SDL2-2.0.3/i686-w64-mingw32/lib" />
+			<Add directory="C:/SDL2/lib" />
+		</Linker>
+		<Unit filename="Renderer.cpp" />
+		<Unit filename="include/Camera.h" />
+		<Unit filename="include/Framebuffer.h" />
+		<Unit filename="include/Material.h" />
+		<Unit filename="include/Mesh.h" />
+		<Unit filename="include/ObjectManager.h" />
+		<Unit filename="include/RenderSystem.h" />
+		<Unit filename="include/Shader.h" />
+		<Unit filename="include/TextureManager.h" />
+		<Unit filename="src/Camera.cpp" />
+		<Unit filename="src/Framebuffer.cpp" />
+		<Unit filename="src/Material.cpp" />
+		<Unit filename="src/Mesh.cpp" />
+		<Unit filename="src/ObjectManager.cpp" />
+		<Unit filename="src/RenderSystem.cpp" />
+		<Unit filename="src/Shader.cpp" />
+		<Unit filename="src/TextureManager.cpp" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

@@ -1,0 +1,13 @@
+#version 400
+layout (location = 0) out vec4 FragColour;
+in vec2 TexCoords;
+
+uniform sampler2D Albedo;
+
+void main()
+{
+	float C = texture(Albedo,TexCoords).x;
+	float Z = (2 * 0.01) / (1000 + 0.01 - C * (1000 - 0.01));
+	FragColour = vec4(Z,Z,Z,1);
+	//FragColour = vec4(texture(Albedo,TexCoords).xyz,1);
+}

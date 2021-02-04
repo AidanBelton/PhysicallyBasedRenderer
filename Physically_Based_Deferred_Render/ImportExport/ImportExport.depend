@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1426059884 source:c:\users\aidanbelton\desktop\deadendengine\renderer\importexport\main.cpp
+	<iostream>
+	<string>
+	<fstream>
+
